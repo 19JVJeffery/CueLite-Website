@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="bg-glow bg-glow-a" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-b" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="#top">CueLite</a>
@@ -39,24 +42,40 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Built for show-critical moments</p>
-            <h1>Run every cue with confidence.</h1>
+            <p class="eyebrow">Cue playback for mission-critical moments</p>
+            <h1>Run every cue with precision, even under pressure.</h1>
             <p class="lead">
-              CueLite is a professional macOS app for live show playback and cue control. Design your cue list,
-              set per-project behavior, and trigger flawless transitions in real time.
+              CueLite gives live teams a clean macOS control surface for reliable audio playback, fast cue changes,
+              and repeatable show flow.
             </p>
             <div class="cta-row">
               <a class="btn btn-primary" href="#download">Get CueLite</a>
               <a class="btn btn-secondary" href="https://github.com/19JVJeffery/CueLite" target="_blank" rel="noreferrer">View Source</a>
             </div>
+            <div class="stat-row" aria-label="CueLite quick stats">
+              <article class="stat-pill">
+                <strong>macOS-first</strong>
+                <span>Native playback workflow</span>
+              </article>
+              <article class="stat-pill">
+                <strong>Live-ready</strong>
+                <span>Fast trigger + fade control</span>
+              </article>
+              <article class="stat-pill">
+                <strong>Show-focused</strong>
+                <span>Built for operators</span>
+              </article>
+            </div>
           </div>
+
           <aside class="hero-panel" aria-label="CueLite at a glance">
-            <h2>At a glance</h2>
+            <p class="panel-label">At a glance</p>
+            <h2>One focused surface for every show.</h2>
             <ul>
-              <li>macOS-first live cue playback</li>
-              <li>Fast cue list and transport controls</li>
-              <li>Per-project fade and import behavior</li>
-              <li>Ready for rehearsals, services, and shows</li>
+              <li>Build and reorder cue lists quickly</li>
+              <li>Control transport without context switching</li>
+              <li>Set fade and import behavior once per project</li>
+              <li>Stay confident during rehearsals and live events</li>
             </ul>
           </aside>
         </div>
@@ -64,15 +83,19 @@
 
       <section id="features" class="section">
         <div class="container">
-          <h2>Everything you need in one focused control surface</h2>
+          <div class="section-head">
+            <p class="eyebrow">Feature set</p>
+            <h2>Everything you need in a polished show control experience</h2>
+          </div>
           <div class="card-grid" id="featureGrid"></div>
         </div>
       </section>
 
       <section id="formats" class="section section-alt">
         <div class="container formats-wrap">
-          <h2>Industry standard audio support</h2>
-          <p class="section-intro">CueLite is built to fit real production libraries and high-fidelity show playback.</p>
+          <p class="eyebrow">Audio compatibility</p>
+          <h2>Industry standard format support</h2>
+          <p class="section-intro">CueLite fits real production libraries and high-fidelity playback expectations.</p>
           <div class="chip-grid format-list">
             <span class="chip">WAV</span>
             <span class="chip">AIFF</span>
@@ -85,7 +108,10 @@
 
       <section id="shortcuts" class="section">
         <div class="container">
-          <h2>Power user shortcuts</h2>
+          <div class="section-head">
+            <p class="eyebrow">Speed controls</p>
+            <h2>Power user shortcuts for fast operation</h2>
+          </div>
           <table class="shortcut-table" aria-label="CueLite keyboard shortcuts">
             <tbody>
               <tr><td>Trigger Cue</td><td><span class="key">Space</span></td></tr>
@@ -103,7 +129,10 @@
 
       <section id="workflow" class="section section-alt">
         <div class="container">
-          <h2>Simple workflow for complex productions</h2>
+          <div class="section-head">
+            <p class="eyebrow">Workflow</p>
+            <h2>Simple setup, dependable execution</h2>
+          </div>
           <ol class="timeline">
             <li><strong>Build your show:</strong> Add tracks and arrange cues in playback order.</li>
             <li><strong>Tune project settings:</strong> Define fade duration and import behavior once.</li>
@@ -115,8 +144,10 @@
 
       <section id="highlights" class="section">
         <div class="container">
-          <h2>Release highlights</h2>
-          <p class="section-intro">CueLite keeps improving with practical upgrades for production teams.</p>
+          <div class="section-head">
+            <p class="eyebrow">Release momentum</p>
+            <h2>Recent improvements built for production teams</h2>
+          </div>
           <div class="chip-grid" id="highlightGrid"></div>
         </div>
       </section>
@@ -124,13 +155,14 @@
       <section id="download" class="section section-alt">
         <div class="container split">
           <div>
+            <p class="eyebrow">Get started</p>
             <h2>Download CueLite</h2>
             <p>
-              Grab the latest CueLite release and start building your first live playback project in minutes.
+              Grab the latest release and start building your first live playback project in minutes.
             </p>
             <ul>
               <li>Platform: macOS</li>
-              <li>Best for: live events, houses of worship, theater, and touring teams</li>
+              <li>Best for: live events, houses of worship, theatre, and touring teams</li>
               <li>Fast setup with a focused playback experience</li>
             </ul>
             <a class="btn btn-primary" href="https://github.com/19JVJeffery/CueLite/releases" target="_blank" rel="noreferrer">
@@ -138,9 +170,9 @@
             </a>
           </div>
           <div class="notice">
-            <h3>Need help getting started?</h3>
+            <h3>Need implementation docs?</h3>
             <p>
-              Visit the project repository for documentation, setup guidance, and current roadmap details.
+              Visit the CueLite repository for setup guidance, roadmap updates, and release details.
             </p>
             <a class="text-link" href="https://github.com/19JVJeffery/CueLite" target="_blank" rel="noreferrer">Go to repository →</a>
           </div>
@@ -149,7 +181,10 @@
 
       <section id="faq" class="section">
         <div class="container">
-          <h2>FAQ</h2>
+          <div class="section-head">
+            <p class="eyebrow">FAQ</p>
+            <h2>Common questions</h2>
+          </div>
           <details>
             <summary>Who is CueLite for?</summary>
             <p>Anyone running timed or manually triggered audio cues in live production settings.</p>

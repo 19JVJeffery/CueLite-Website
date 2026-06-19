@@ -40,22 +40,28 @@ const menuToggle = document.getElementById("menuToggle");
 const siteNav = document.getElementById("siteNav");
 
 if (featureGrid) {
-  featureGrid.innerHTML = features
-    .map(
-      (feature) => `
-        <article class="card">
-          <h3>${feature.title}</h3>
-          <p>${feature.description}</p>
-        </article>
-      `
-    )
-    .join("");
+  features.forEach((feature) => {
+    const article = document.createElement("article");
+    article.className = "card";
+
+    const heading = document.createElement("h3");
+    heading.textContent = feature.title;
+
+    const body = document.createElement("p");
+    body.textContent = feature.description;
+
+    article.append(heading, body);
+    featureGrid.appendChild(article);
+  });
 }
 
 if (highlightGrid) {
-  highlightGrid.innerHTML = highlights
-    .map((item) => `<span class="chip">${item}</span>`)
-    .join("");
+  highlights.forEach((item) => {
+    const chip = document.createElement("span");
+    chip.className = "chip";
+    chip.textContent = item;
+    highlightGrid.appendChild(chip);
+  });
 }
 
 if (menuToggle && siteNav) {
